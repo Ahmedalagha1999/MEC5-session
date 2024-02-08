@@ -16,10 +16,18 @@ class CustomeCardFood extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(
-            imagePath,
-            width: 120,
-            height: 120,
+          Container(
+            padding: EdgeInsets.all(10),
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Color(0xFFBDBDBD),
+            ),
+            child: Image.asset(
+              fit: BoxFit.cover,
+              imagePath,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
@@ -33,19 +41,30 @@ class CustomeCardFood extends StatelessWidget {
                     fontSize: 14,
                   ),
                 ),
+                SizedBox(
+                  height: 15,
+                ),
                 Row(
                   children: [
-                    Text("data"),
+                    Text("1.4 km"),
+                    SizedBox(
+                      width: 10,
+                    ),
                     Icon(Icons.star),
-                    Text("data"),
+                    Text("4.7  (1.7k)"),
                   ],
+                ),
+                SizedBox(
+                  height: 15,
                 ),
                 Row(
                   children: [
                     Icon(Icons.motorcycle),
-                    Text("ggggg"),
-                    // Spacer(),
-                    Icon(Icons.favorite)
+                    Text("\$2.00"),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 60),
+                      child: Icon(Icons.favorite),
+                    )
                   ],
                 ),
               ],

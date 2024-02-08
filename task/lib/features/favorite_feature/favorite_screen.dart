@@ -56,7 +56,9 @@ class FavoriteScreen extends StatelessWidget {
           horizontal: 20,
         ),
         child: ListView.separated(
-          separatorBuilder: (context, index) => Divider(),
+          separatorBuilder: (context, index) => SizedBox(
+            height: 20,
+          ),
           itemCount: favList.length,
           itemBuilder: (context, index) {
             return GestureDetector(

@@ -114,13 +114,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
             Hero(
               tag: widget.index,
               child: Container(
-                height: 242,
-                width: 242,
+                height: 245,
+                width: 230,
                 child: Image.asset(
-                  // fit: BoxFit.cover,
+                  fit: BoxFit.fitHeight,
                   widget.imagePath,
-                  width: 230,
-                  height: 230,
+                  // width: 245,
+                  // height: 245,
                 ),
               ),
             ),
@@ -141,9 +141,12 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 SizedBox(
                   width: 15,
                 ),
-                Icon(Icons.ac_unit),
+                Icon(Icons.local_fire_department),
                 Text("424Kcal"),
               ],
+            ),
+            SizedBox(
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -158,6 +161,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   title: "large",
                 ),
               ],
+            ),
+            SizedBox(
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -181,7 +187,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(
-                        Icons.add,
+                        Icons.remove,
                         size: 15,
                       ),
                       Text("2"),
@@ -201,6 +207,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 fontSize: 14,
               ),
             ),
+            SizedBox(
+              height: 10,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -214,6 +223,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   title: "🍅 Tomato",
                 ),
               ],
+            ),
+            SizedBox(
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
